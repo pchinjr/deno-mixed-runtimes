@@ -1,4 +1,4 @@
-import document from "./components/document.js";
+import HTML from "./components/html.js";
 import Main from "./components/main.js"
 
 export async function handler(req /*object*/) {
@@ -7,6 +7,6 @@ export async function handler(req /*object*/) {
       "content-type": "text/html; charset=utf8",
     },
     statusCode: 200,
-    body: document({body:Main()}),
+    body: HTML({body:Main()}),
   };
 }
