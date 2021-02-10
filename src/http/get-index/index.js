@@ -7,6 +7,6 @@ export async function handler(req /*object*/) {
       "content-type": "text/html; charset=utf8",
     },
     statusCode: 200,
-    body: HTML({body:Main()}),
+    body: HTML({title: "SSR in Deno", children: Main()}),
   };
 }
