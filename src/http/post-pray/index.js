@@ -5,7 +5,8 @@ async function route(req) {
   console.log(req.body.prayer)
 
   let save = await data.set({
-    table: 'prayers'
+    table: 'prayers',
+    item: req.body.prayer
   })
 
   console.log(save)
