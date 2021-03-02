@@ -1,4 +1,4 @@
-import HTML from "./components/html.js";
+import HTML from "./components/html.js"
 import Main from "./components/main.js"
 
 export async function handler(req /*object*/) {
@@ -9,6 +9,7 @@ export async function handler(req /*object*/) {
     statusCode: 200,
     body: HTML({
       title: "SSR in Deno",
-      children: Main({name: 'Cage'})}),
+      children: Main({name: 'Cage'})
+    }),
   };
 }

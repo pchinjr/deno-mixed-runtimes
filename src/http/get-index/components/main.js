@@ -1,5 +1,6 @@
 export default function Main(state={}) {
   let { name } = state
+  
   let time = new Date().toLocaleTimeString()
 
   return `

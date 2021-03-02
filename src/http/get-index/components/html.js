@@ -9,6 +9,7 @@ export default function document(state={}) {
  <body>
   ${children}
  </body>
+
 </html>
 `
 }
